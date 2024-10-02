@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: red;
+}
+.navbar .links {
+  margin-left: auto;
+}
+/* .home {
+  text-align: center;
+} */
+.navbar a{
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+ }
+ .content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+ }
+ .name-Preview {
+   padding: 10px 16px;
+   margin: 20px 0;
+   border-bottom: 1px solid #fafafa;
+  }
+  .name-Preview:hover {
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, .1);
+  }
+  .name-Preview h2 {
+    font-size: 20px;
+    color: red;
+    margin-bottom: 8px;
+  }
