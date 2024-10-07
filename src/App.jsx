@@ -2,7 +2,7 @@ import React from 'react'
 // import { useState } from 'react'
 import Navbar from './Navbar';
 import Home from './Home';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 import Create from './Create';
 import BlogDetail from './BlogDetail';
 
@@ -23,7 +23,7 @@ const App = () => {
           <Route path="/Create">
             <Create />
           </Route>
-          <Route path="/BlogDetail">
+          <Route path="/blogs/:id">
             <BlogDetail />
           </Route>
         </Switch>
