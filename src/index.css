@@ -30,20 +30,57 @@
   margin: 40px auto;
   padding: 20px;
  }
- .name-Preview {
-  text-decoration: none;
-}
-.main-blog {
+
+.name-Preview {
   padding: 10px 16px;
   margin: 5px 0;
-  border-bottom: 1px solid #fafafa;
-  
+  border-bottom: 1px solid #fafafa; 
 }
-.main-blog:hover {
+.link {
+  text-decoration: none;
+}
+.name-Preview:hover {
   box-shadow: 1px 3px 5px rgba(0, 0, 0, .1);
 }
 .name-Preview h2 {
   font-size: 20px;
   color: red;
   margin-bottom: 8px;
+}
+.blog-details h2 {
+  font-size: 20px;
+  color: red;
+  margin-bottom: 10px;
+}
+.blog-details div {
+  margin: 20px 0;
+}
+.create h2{
+  font-size: 20px;
+  color: #f13564;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background-color: red;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.blog-details button {
+  background-color: red;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }

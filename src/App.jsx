@@ -2,7 +2,7 @@ import React from 'react'
 // import { useState } from 'react'
 import Navbar from './Navbar';
 import Home from './Home';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Create from './Create';
 import BlogDetail from './BlogDetail';
 
@@ -16,17 +16,11 @@ const App = () => {
       <div className='app'>
       <Navbar />
       <div className="content">
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/Create">
-            <Create />
-          </Route>
-          <Route path="/blogs/:id">
-            <BlogDetail />
-          </Route>
-        </Switch>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/create" element={<Create />} />
+        <Route path="/blogs/:id" element={<BlogDetail />} />
+      </Routes>
       </div>
     </div>
     </Router>
@@ -34,4 +28,3 @@ const App = () => {
 }
 
 export default App
-

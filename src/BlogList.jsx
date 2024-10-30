@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom/cjs/react-router-dom.min'
+import { Link } from "react-router-dom";
 
 const BlogList = ( { blogs, title, handleDelete } ) => {
   // const blogs = props.blogs;
@@ -9,7 +9,7 @@ const BlogList = ( { blogs, title, handleDelete } ) => {
       <h2>{ title }</h2>
           {blogs.map((blog) => (
           <div className="name-Preview" key={blog.id}>
-            <Link to={'/blogs/${blog.id}'}>
+            <Link to={`/blogs/${blog.id}`} className='link'>
               <h2>{blog.title}</h2>
               <p>Created by {blog.author}</p>
             </Link>
